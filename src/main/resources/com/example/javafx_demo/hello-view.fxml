@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_demo.controller.RouteController">
+   <children>
+      <TextField fx:id="pathInput" layoutX="280.0" layoutY="70.0" maxHeight="20.0" maxWidth="300.0" minHeight="20.0" minWidth="100.0" prefHeight="20.0" prefWidth="300.0" promptText="Введите рапсоложение файла " />
+      <AnchorPane layoutX="2.0" layoutY="-1.0" prefHeight="400.0" prefWidth="100.0" style="-fx-background-color: #B693D5;" />
+      <AnchorPane layoutX="128.0" layoutY="4.0" prefHeight="50.0" prefWidth="470.0" style="-fx-border-color: #5F308B; -fx-background-color: #D0B4EA;">
+         <children>
+            <Text layoutX="134.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Посчитать среднее арифметическое" textAlignment="CENTER" wrappingWidth="202.78700256347656" />
+         </children>
+      </AnchorPane>
+      <Text layoutX="140.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите расположение файла" wrappingWidth="118.1650390625" x="15.0" />
+      <Button fx:id="submitroute" layoutX="336.0" layoutY="373.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="Отправить" />
+      <Text fx:id="outputText" layoutX="244.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Здесь будет результат" />
+   </children>
+</AnchorPane>
